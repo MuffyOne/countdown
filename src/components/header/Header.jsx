@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styles from './Header.module.css';
 import { ColorContext } from '../../shared/Color.context';
 
-const CounterUnit = ({ children }) => {
+const Header = ({ children }) => {
   const { color } = useContext(ColorContext);
   return (
     <div className={styles.header} style={{ color }}>
@@ -11,4 +11,4 @@ const CounterUnit = ({ children }) => {
   );
 };
 
-export default CounterUnit;
+export default Header;
